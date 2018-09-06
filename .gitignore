@@ -16,3 +16,4 @@ src/.idea/*
 .settings/
 .classpath
 .project
+/target/

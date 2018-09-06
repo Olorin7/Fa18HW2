@@ -1,68 +1,40 @@
 # Homework 2: B+ Trees
-**Due 11:59 PM Thursday, February 22**
+**Due 11:59 PM Wednesday, September 26**
 
 ## Overview
 In this assignment, you will implement persistent B+ trees in Java. In this
 document, we explain
 
 - how to fetch the release code from GitHub,
-- how to program in Java on the virtual machine, and
+- how to test your code using the docker container
 - what code you have to implement.
 
 ## Step 0: Fetching the Assignment and Setup
-First, **boot your VM and open a terminal window**. Then run the following to
-checkout the master branch.
+First, **bootup your docker container**. To do this, follow the same command we used in the HW1 setup
+`docker run -v <pathname-to-directory-on-your-machine>:/cs186 -it cs186/environment bash`
 
-```bash
-git checkout master
-```
+Navigate to the shared directory you created in the hw1 setup: `cs186`  
 
-If this command fails, you may be on another branch with uncommited changes.
-Run `git branch` to see what branch you are on and `git status` to check for
-uncommited changes. Once all changes are committed, run `git checkout master`.
+Clone the HW2 repo: `https://github.com/berkeley-cs186/Fa18HW2.git`
 
-Next, run the following to pull the homework from GitHub and change to a new
-`hw2` branch:
+cd into the folder you just created: `cd Fa18HW2`
 
-```bash
-git pull staff master
-git checkout -b hw2
-```
+To test everything downloaded correctly run: `mvn clean compile`
 
-Next, fetch the graphviz package:
-```bash
-sudo apt-get install -y graphviz
-```
+To test your project implementation, run: `mvn clean test`
+
+If you haven't implemented anything, about 20 tests should fail and your output should look something like this: 
+
+
+Before submitting your assignment you must run `mvn clean test` and ensure it works in the docker container. We will not accept "the test ran in my IDE" as an excuse. You should be running the maven tests periodically as you work through the project.
 
 ## Step 1: Getting Started with Java
-Navigate to the `hw2` directory. In the
-`src/main/java/edu/berkeley/cs186/database` directory, you will find all of the
-Java 8 code we have provided to you. In the
-`src/test/java/edu/berkeley/cs186/database` directory, you will find all of the
-unit tests we have provided to you. To build and test the code with maven, run
-the following in the `hw2` directory:
-
-```bash
-mvn clean compile # Compile the code.
-mvn clean test    # Test the code. Not all tests will pass until you finish the
-                  # assignment.
-```
-
 You are free to use any text editor or IDE to complete the project, but **we
-will build and test your code on the VM with maven**. We **highly highly recommend** completing
-the project with either Eclipse or IntelliJ, both of which come installed on
-the VM:
+will build and test your code in the docker container with maven**.
 
-```bash
-eclipse # Launch eclipse.
-idea.sh # Launch IntelliJ.
-```
+We recommend setting up a more local development environment by installing openjdk 1.8.0_181 (the version we run in the docker container) and using an IDE such as Eclipse or IntelliJ (there are plenty of guides outlining how to import maven projects into one of these IDEs).
 
-There are instructions online for how to import a maven project into
-[Eclipse][eclipse_maven] and [IntelliJ][intellij_maven]. There are also
-instructions online for how to debug Java in [Eclipse][eclipse_debugging] and
-[IntelliJ][intellij_debugging]. When IntelliJ prompts you for an SDK, select
-the one in `/home/vagrant/jdk1.8.0_131`. It bears repeating that even though
+ It bears repeating that even though
 you are free to complete the project in Eclipse or IntelliJ, **we will build
 and test your code on the VM with maven**.
 
@@ -210,11 +182,7 @@ the debugger to solve your issue.
 Debugging large B+ trees is hard. To make it a bit easier, we also gave you the `BPlusTree::toDotPDFFile` method. This method converts a tree to dot representation, saves it to a .dot file, and then converts it to a PDF file that will be stored in your `src` directory. You can then use the web browser to view the PDF file. Make sure that your file string argument for the `BPlusTree::toDotPDFFile` method has ".pdf" at the end.
 
 ## Step 4: Submitting the Assignment
-After you complete the assignment, simply commit and `git push` your `hw2`
-branch. 60% of your grade will come from passing the unit tests we provide to
-you. 40% of your grade will come from passing unit tests that we have not
-provided to you. If your code does not compile on the VM with maven, we reserve
-the right to give you a 0 on the assignment.
+We will release submission instructions for Edx closer to the due date.
 
 [eclipse_maven]: https://stackoverflow.com/a/36242422
 [intellij_maven]: https://www.jetbrains.com/help/idea//2017.1/importing-project-from-maven-model.html
