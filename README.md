@@ -13,7 +13,7 @@ document, we explain
 First, **bootup your docker container**. To do this, follow the same command we used in the HW1 setup
 `docker run -v <pathname-to-directory-on-your-machine>:/cs186 -it cs186/environment bash`
 
-Navigate to the shared directory you created in the hw1 setup: `cs186`  
+Navigate to the shared directory you created in the hw1 setup: `cd cs186`  
 
 Clone the HW2 repo: `https://github.com/berkeley-cs186/Fa18HW2.git`
 
@@ -25,18 +25,17 @@ To test your project implementation, run: `mvn clean test`
 
 If you haven't implemented anything, about 20 tests should fail and your output should look something like this: 
 
+![Expected Output](testoutput.PNG)
 
 Before submitting your assignment you must run `mvn clean test` and ensure it works in the docker container. We will not accept "the test ran in my IDE" as an excuse. You should be running the maven tests periodically as you work through the project.
 
-## Step 1: Getting Started with Java
+## Step 1: Setup your development environment
 You are free to use any text editor or IDE to complete the project, but **we
 will build and test your code in the docker container with maven**.
 
 We recommend setting up a more local development environment by installing openjdk 1.8.0_181 (the version we run in the docker container) and using an IDE such as Eclipse or IntelliJ (there are plenty of guides outlining how to import maven projects into one of these IDEs).
 
- It bears repeating that even though
-you are free to complete the project in Eclipse or IntelliJ, **we will build
-and test your code on the VM with maven**.
+It bears repeating that even though you are free to complete the project in Eclipse or IntelliJ, **we will build and test your code on the VM with maven**.
 
 ## Step 2: Getting Familiar with the Release Code
 Navigate to the `hw2/src/main/java/edu/berkeley/cs186/database` directory. You
@@ -174,12 +173,6 @@ Note that you may not modify the signature of any methods or classes that we
 provide to you (except `BPlusTreeIterator`), but you're free to add helper
 methods. Also, you may only modify code in the `index` directory.
 
-### Debugging
-As stated earlier, we highly recommend using a Java IDE for this project because it will require a
-lot of debugging. In office hours, we will **not** help you until you have tried using
-the debugger to solve your issue.
-
-Debugging large B+ trees is hard. To make it a bit easier, we also gave you the `BPlusTree::toDotPDFFile` method. This method converts a tree to dot representation, saves it to a .dot file, and then converts it to a PDF file that will be stored in your `src` directory. You can then use the web browser to view the PDF file. Make sure that your file string argument for the `BPlusTree::toDotPDFFile` method has ".pdf" at the end.
 
 ## Step 4: Submitting the Assignment
 We will release submission instructions for Edx closer to the due date.
