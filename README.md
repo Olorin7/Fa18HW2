@@ -38,7 +38,7 @@ We recommend setting up a more local development environment by installing openj
 It bears repeating that even though you are free to complete the project in Eclipse or IntelliJ, **we will build and test your code in the docker container with maven**.
 
 ## Step 2: Getting Familiar with the Release Code
-Navigate to the `hw2/src/main/java/edu/berkeley/cs186/database` directory. You
+Navigate to the `Fa18HW2/src/main/java/edu/berkeley/cs186/database` directory. You
 will find five directories: `common`, `databox`, `io`, `table`, and `index`.
 You do not have to deeply understand all of the code, but since all future
 programming assignments will reuse this code, it's worth becoming a little
