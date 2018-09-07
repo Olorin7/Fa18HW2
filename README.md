@@ -23,7 +23,7 @@ To test everything downloaded correctly run: `mvn clean compile`
 
 To test your project implementation, run: `mvn clean test`
 
-If you haven't implemented anything, about 20 tests should fail and your output should look something like this: 
+If you haven't implemented anything, about 20 tests should fail and the bottom of your output should look something like this: 
 
 ![Expected Output](testoutput.PNG)
 
