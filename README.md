@@ -35,7 +35,7 @@ will build and test your code in the docker container with maven**.
 
 We recommend setting up a more local development environment by installing openjdk 1.8.0_181 (the version we run in the docker container) and using an IDE such as Eclipse or IntelliJ (there are plenty of guides outlining how to import maven projects into one of these IDEs).
 
-It bears repeating that even though you are free to complete the project in Eclipse or IntelliJ, **we will build and test your code on the VM with maven**.
+It bears repeating that even though you are free to complete the project in Eclipse or IntelliJ, **we will build and test your code in the docker container with maven**.
 
 ## Step 2: Getting Familiar with the Release Code
 Navigate to the `hw2/src/main/java/edu/berkeley/cs186/database` directory. You
