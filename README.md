@@ -39,8 +39,7 @@ It bears repeating that even though you are free to complete the project in Ecli
 
 ## Step 2: Getting Familiar with the Release Code
 Navigate to the `Fa18HW2/src/main/java/edu/berkeley/cs186/database` directory. You
-will find seven directories: `common`, `databox`, `io`, `table`, `query` `concurrency`, 
-`index` and `query`.You do not have to deeply understand all of the code, but since all future programming assignments will reuse this code, it's worth becoming a little familiar with it. **In this assignment, though, you may only modify files in
+will find seven directories: `common`, `databox`, `io`, `table`, `query` `concurrency` and `index`.You do not have to deeply understand all of the code, but since all future programming assignments will reuse this code, it's worth becoming a little familiar with it. **In this assignment, though, you may only modify files in
 the `index` directory**.
 
 ### common
