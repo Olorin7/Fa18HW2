@@ -39,10 +39,8 @@ It bears repeating that even though you are free to complete the project in Ecli
 
 ## Step 2: Getting Familiar with the Release Code
 Navigate to the `Fa18HW2/src/main/java/edu/berkeley/cs186/database` directory. You
-will find five directories: `common`, `databox`, `io`, `table`, and `index`.
-You do not have to deeply understand all of the code, but since all future
-programming assignments will reuse this code, it's worth becoming a little
-familiar with it. **In this assignment, though, you may only modify files in
+will find seven directories: `common`, `databox`, `io`, `table`, `query` `concurrency`, 
+`index` and `query`.You do not have to deeply understand all of the code, but since all future programming assignments will reuse this code, it's worth becoming a little familiar with it. **In this assignment, though, you may only modify files in
 the `index` directory**.
 
 ### common
@@ -124,6 +122,12 @@ page number and entry number.
 // The jth record on the ith page.
 RecordId rid = new RecordId(i, (short) j);
 ```
+
+### query
+The `query` directory contains what are called query operators. These are operators that are applied to one or more tables, or other operators. They carry out their operation on their input operator(s) and return iterators over records that are the result of applying that specific operator. You don't need to worry about this directory for HW2.
+
+### concurrency
+The `concurrency` directory contains classes to help achieve concurrency of the database. You don't need to worry about this directory for HW2.
 
 ### index
 We describe the `index` directory in the next section.
