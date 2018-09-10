@@ -160,14 +160,17 @@ In this assignment, do the following:
 2. Implement the `LeafNode::fromBytes` function that reads a `LeafNode` from a
    page. For information on how a leaf node is serialized, see
    `LeafNode::toBytes`. For an example on how to read a node from disk, see
-   `InnerNode::fromBytes`.
+   `InnerNode::fromBytes`. Note that `testToAndFromBytes` will not pass just from completing this
+   function, you need to complete `LeafNode.put` (question 3) as well.
 3. Implement the `get`, `getLeftmostLeaf`, `put`, `remove`, and `bulkLoad` methods of
    `InnerNode` and `LeafNode`. For information on what these methods do, refer
    to the comments in `BPlusNode`. Don't forget to call `sync` when
    implementing `put`, `remove`, and `bulkLoad`; it's easy to forget.
 4. Implement the `get`, `scanAll`, `scanGreaterEqual`, `put`, `remove`, and `bulkLoad`
    methods of `BPlusTree`. In order to implement `scanAll` and
-   `scanGreaterEqual`, you will have to complete the `BPlusTreeIterator` class.
+   `scanGreaterEqual`, you will have to complete the `BPlusTreeIterator` class. If `testRandomPuts`
+   fails because of a timeout exception raise the globalTimeout (line 37). Anything under a minute
+   is probably okay.
 
 After this, you should pass all the tests we have provided to you (and any you
 add yourselves).
