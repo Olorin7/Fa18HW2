@@ -15,7 +15,7 @@ First, **bootup your docker container**. To do this, follow the same command we 
 
 Navigate to the shared directory you created in the hw1 setup: `cd cs186`  
 
-Clone the HW2 repo: `https://github.com/berkeley-cs186/Fa18HW2.git`. If you get an error like: `Could not resolve host: github.com`, try restarting your docker machine, and if that doesn't work restart your entire computer. 
+Clone the HW2 repo: `https://github.com/berkeley-cs186/Fa18HW2.git`. If you get an error like: `Could not resolve host: github.com`, try restarting your docker machine (run `docker-machine restart` after exiting the docker container), and if that doesn't work restart your entire computer. 
 
 cd into the folder you just created: `cd Fa18HW2`
 
@@ -169,7 +169,7 @@ In this assignment, do the following:
 4. Implement the `get`, `scanAll`, `scanGreaterEqual`, `put`, `remove`, and `bulkLoad`
    methods of `BPlusTree`. In order to implement `scanAll` and
    `scanGreaterEqual`, you will have to complete the `BPlusTreeIterator` class. If `testRandomPuts`
-   fails because of a timeout exception raise the globalTimeout (line 37). Anything under a minute
+   fails because of a timeout exception raise the `globalTimeout` (line 37 in `TestBPlusTree`). Anything under a minute
    is probably okay.
 
 After this, you should pass all the tests we have provided to you (and any you
