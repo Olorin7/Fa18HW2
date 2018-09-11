@@ -18,7 +18,10 @@ docker run -v <pathname-to-directory-on-your-machine>:/cs186 -it cs186/environme
 Navigate to the shared directory you created in the hw1 setup: `cd cs186`  
 
 Clone the HW2 repo: 
-```git clone https://github.com/berkeley-cs186/Fa18HW2.git```. If you get an error like: `Could not resolve host: github.com`, try restarting your docker machine (run `docker-machine restart` after exiting the docker container), and if that doesn't work restart your entire computer. 
+```
+git clone https://github.com/berkeley-cs186/Fa18HW2.git
+```
+If you get an error like: `Could not resolve host: github.com`, try restarting your docker machine (run `docker-machine restart` after exiting the docker container), and if that doesn't work restart your entire computer. 
 
 cd into the folder you just created: `cd Fa18HW2`
 
