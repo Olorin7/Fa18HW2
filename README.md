@@ -26,6 +26,7 @@ To test your project implementation, run: `mvn clean test`
 If you haven't implemented anything, about 20 tests should fail and the bottom of your output should look something like this: 
 
 ![Expected Output](testoutput.PNG)
+If a few additional tests fail try running the command again. If the problem persists then make a post on piazza.
 
 Before submitting your assignment you must run `mvn clean test` and ensure it works in the docker container. We will not accept "the test ran in my IDE" as an excuse. You should be running the maven tests periodically as you work through the project.
 
