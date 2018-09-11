@@ -10,16 +10,23 @@ document, we explain
 - what code you have to implement.
 
 ## Step 0: Fetching the Assignment and Setup
-First, **startup your docker container**. To avoid redownloading the maven dependencies every time you start your container we will do this a little differently than in HW1. First, find the name of the docker container that you created most recently: `docker container ls --all -n 1` (adjust the n parameter if your most recent container is not from a cs186/environment image). Then run `docker start [container_name]`. To open bash in that container run: `docker exec -it [container_name] bash`. In the future, the only command you should need to run is the exec command. Your entire terminal should look something like this:
-
-![Commands](dockerstart.PNG)
-
-If for some reason you cannot get this to work, the fallback is using the same command we ran in homework 1:
+To avoid redownloading our maven dependencies every time we start our docker conatiner, we will start our docker container a little differently than in hw1. The first time you work on this homework run the following command:
 ```
-docker run -v <pathname-to-directory-on-your-machine>:/cs186 -it cs186/environment bash
+docker run -it --name cs186hw2 <pathname-to-directory-on-your-machine>:/cs186 -it cs186/environment bash
+```
+The only difference in this command from the one we used in HW1 is that we give the container a name. Make sure you can access your shared drive as in HW1, then exit out of the container (just type in `exit`). Now startup your container again with the following command:
+```
+docker start cs186hw2
+```
+After completing the steps above whenever you want to open up your docker container, the only command you need to run is:
+```
+docker exec -it cs186hw2 bash
 ```
 
-Navigate to the shared directory you created in the hw1 setup: `cd cs186`  
+After completing these steps, your terminal should look something like this:
+
+
+While inside your container, navigate to the shared directory you created in the hw1 setup: `cd cs186`  
 
 Clone the HW2 repo: 
 ```
