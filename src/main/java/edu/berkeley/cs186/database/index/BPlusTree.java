@@ -320,39 +320,6 @@ public class BPlusTree {
     }
 
     /**
-     * This function is very similar to toDot() except that we write
-     * the dot representation of the B+ tree to a dot file and then
-     * convert that to a PDF that will be stored in the src directory. Pass in a
-     * string with the ".pdf" extension included at the end (ex "tree.pdf").
-     */
-    public void toDotPDFFile(String filename) {
-      List<String> strings = new ArrayList<>();
-      strings.add("digraph g {" );
-      strings.add("  node [shape=record, height=0.1];");
-      strings.add(root.toDot());
-      strings.add("}");
-      String tree_string = String.join("\n", strings);
-
-      // Writing to intermediate dot file
-      try {
-    	  File file = new File("tree.dot");
-    	  FileWriter fileWriter = new FileWriter(file);
-    	  fileWriter.write(tree_string);
-    	  fileWriter.flush();
-    	  fileWriter.close();
-      } catch (IOException e) {
-    	  e.printStackTrace();
-      }
-
-      // Running command to convert dot file to PDF
-      try {
-    	Runtime.getRuntime().exec("dot -T pdf tree.dot -o " + filename);
-	  } catch (IOException e) {
-		e.printStackTrace();
-	  }
-    }
-
-    /**
      * Returns the largest number d such that the serialization of a LeafNode
      * with 2d entries and an InnerNode with 2d keys will fit on a single page
      * of size `pageSizeInBytes`.
