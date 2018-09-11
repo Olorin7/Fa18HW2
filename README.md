@@ -12,7 +12,7 @@ document, we explain
 ## Step 0: Fetching the Assignment and Setup
 To avoid redownloading our maven dependencies every time we start our docker conatiner, we will start our docker container a little differently than in hw1. The first time you work on this homework run the following command:
 ```
-docker run -it --name cs186hw2 <pathname-to-directory-on-your-machine>:/cs186 -it cs186/environment bash
+docker run --name cs186hw2 <pathname-to-directory-on-your-machine>:/cs186 -it cs186/environment bash
 ```
 The only difference in this command from the one we used in HW1 is that we give the container a name. Make sure you can access your shared drive as in HW1, then exit out of the container (just type in `exit`). Now startup your container again with the following command:
 ```
