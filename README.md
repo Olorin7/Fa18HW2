@@ -10,11 +10,11 @@ document, we explain
 - what code you have to implement.
 
 ## Step 0: Fetching the Assignment and Setup
-First, **startup your docker container**. To avoid redownloading the maven dependencies every time you start your container we will use a few different commands. First, find the name of the docker container that you created most recently: `docker container ls --all -n 1` most recently (adjust the n parameter if your most recent container is not from a cs186/environment image). Then run `docker start [container_name]`. To open a bash in that container run: `docker exec -it [container_name] bash`. In the future, the only command you should need to run is the exec command. Your entire terminal should look something like this:
+First, **startup your docker container**. To avoid redownloading the maven dependencies every time you start your container we will use do this a little differently than in HW1. First, find the name of the docker container that you created most recently: `docker container ls --all -n 1` (adjust the n parameter if your most recent container is not from a cs186/environment image). Then run `docker start [container_name]`. To open bash in that container run: `docker exec -it [container_name] bash`. In the future, the only command you should need to run is the exec command. Your entire terminal should look something like this:
 
 ![Commands](dockerstart.PNG)
 
-To do this, follow the same command we used in the HW1 setup  
+If for some reason you cannot get this to work, the fallback is using the same command we ran in homework 1:
 ```
 docker run -v <pathname-to-directory-on-your-machine>:/cs186 -it cs186/environment bash
 ```
