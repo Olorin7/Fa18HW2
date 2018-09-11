@@ -11,7 +11,7 @@ document, we explain
 
 ## Step 0: Fetching the Assignment and Setup
 First, **bootup your docker container**. To do this, follow the same command we used in the HW1 setup
-`docker run -v <pathname-to-directory-on-your-machine>:/cs186 -it cs186/environment bash`
+```docker run -v <pathname-to-directory-on-your-machine>:/cs186 -it cs186/environment bash```
 
 Navigate to the shared directory you created in the hw1 setup: `cd cs186`  
 
