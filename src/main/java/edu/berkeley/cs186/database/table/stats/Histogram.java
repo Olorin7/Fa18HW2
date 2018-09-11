@@ -125,7 +125,9 @@ public class Histogram {
    */
   public void buildHistogram(Table table, int attribute){
 
-    // TODO: HW4 implement
+    // TODO: 
+    
+    implement
 
     //1. first calculate the min and the max values
 
@@ -135,8 +137,7 @@ public class Histogram {
 
     //4. populate the data using the increment(value) method
 
-    throw new NotImplementedException();
-
+    throw new UnsupportedOperationException("hw4: TODO");
   }
 
   private int bucketIndex(float v) {
@@ -309,7 +310,7 @@ public class Histogram {
 
     // TODO: HW4 implement;
 
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException("hw4: TODO");
 
     // return result;
   }
@@ -325,7 +326,7 @@ public class Histogram {
 
     // TODO: HW4 implement;
 
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException("hw4: TODO");
 
 
     // return result;
@@ -342,7 +343,7 @@ public class Histogram {
 
     // TODO: HW4 implement;
 
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException("hw4: TODO");
 
 
     // return result;
@@ -359,7 +360,7 @@ public class Histogram {
 
     // TODO: HW4 implement;
 
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException("hw4: TODO");
 
     // return result;
   }
