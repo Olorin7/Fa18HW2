@@ -125,9 +125,7 @@ public class Histogram {
    */
   public void buildHistogram(Table table, int attribute){
 
-    // TODO: 
-    
-    implement
+    // TODO: implement
 
     //1. first calculate the min and the max values
 
