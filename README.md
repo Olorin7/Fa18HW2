@@ -18,7 +18,7 @@ The only difference in this command from the one we used in HW1 is that we give 
 ```
 docker start cs186hw2
 ```
-After completing the steps above whenever you want to open up your docker container, the only command you need to run is:
+The only thing that should happen is the terminal should print cs186hw2. After running those 2 commands once, to open your container in the future the only command you need to run is:
 ```
 docker exec -it cs186hw2 bash
 ```
