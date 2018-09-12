@@ -26,7 +26,10 @@ docker exec -it cs186hw2 bash
 After completing these steps, your terminal should look something like this:
 ![Commands](dockerstart.PNG)
 
-While inside your container, navigate to the shared directory you created in the hw1 setup: `cd cs186`  
+While inside your container, navigate to the shared directory you created in the hw1 setup: 
+```
+cd cs186
+```  
 
 Clone the HW2 repo: 
 ```
