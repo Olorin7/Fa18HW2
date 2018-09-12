@@ -34,11 +34,20 @@ git clone https://github.com/berkeley-cs186/Fa18HW2.git
 ```
 If you get an error like: `Could not resolve host: github.com`, try restarting your docker machine (run `docker-machine restart` after exiting the docker container), and if that doesn't work restart your entire computer. 
 
-cd into the folder you just created: `cd Fa18HW2`
+cd into the folder you just created: 
+```
+cd Fa18HW2
+```
 
-To test everything downloaded correctly run: `mvn clean compile`
+To test everything downloaded correctly run: 
+```
+mvn clean compile
+```
 
-To test your project implementation, run: `mvn clean test`
+To test your project implementation, run:
+```
+mvn clean test
+```
 
 If you haven't implemented anything, about 20 tests should fail and the bottom of your output should look something like this: 
 
