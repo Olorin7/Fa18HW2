@@ -150,7 +150,7 @@ The `concurrency` directory contains classes to help achieve concurrency of the 
 We describe the `index` directory in the next section.
 
 ## Step 3: Implementing B+ Trees
-The `index` directory contains an partial implementation of a B+ tree
+The `index` directory contains a partial implementation of a B+ tree
 (`BPlusTree`), an implementation that you will complete in this assignment.
 Every B+ tree maps keys of type `DataBox` to values of type `RecordId`. A B+
 tree is composed of inner nodes (`InnerNode`) and leaf nodes (`LeafNode`).
