@@ -214,7 +214,7 @@ methods. Also, you may only modify code in the `index` directory.
 We will release submission instructions for Edx closer to the due date.
 
 ## Testing
-All of our public tests for this project are in the edu.berkeley.cs186.database.index package in src/test/java folder. These are the tests that `maven clean test` runs. 60% of your grade will be made up of these public tests and 40% will be made up of hidden tests on our autograder.
+All of our public tests for this project are in the `edu.berkeley.cs186.database.index` package in `src/test/java folder`. These are the tests that `maven clean test` runs. 60% of your grade will be made up of these public tests and 40% will be made up of hidden tests on our autograder.
 
 [eclipse_maven]: https://stackoverflow.com/a/36242422
 [intellij_maven]: https://www.jetbrains.com/help/idea//2017.1/importing-project-from-maven-model.html
